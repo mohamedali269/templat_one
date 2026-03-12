@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>html|css|js|template</title>
+    <script src="js/logic.js" defer></script>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <!-- Font Awesome Library -->
@@ -14,6 +15,10 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
   </head>
   <body>
@@ -27,8 +32,9 @@
             <span></span>
             <span></span>
           </span>
-          <ul>
+          <ul class="ul">
             <li><a href="#services">Services</a></li>
+            <li><a href="#features">features</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -38,15 +44,15 @@
     </div>
     <!-- End Header -->
     <!-- Start Landing Section -->
-    <div class="landing">
+    <div class="landing" id="home">
       <div class="intro-text">
-        <h1>Hello There</h1>
-        <p>Super Creative & Minimal Agency Web Template</p>
+        <h1 class="header-landing"></h1>
+        <p class="text-landing"></p>
       </div>
     </div>
     <!-- End Landing Section -->
     <!-- Start Features -->
-    <div class="features">
+    <div class="features" id="features">
       <div class="container">
         <div class="feat">
           <i class="fas fa-magic fa-3x"></i>
@@ -150,7 +156,8 @@
             <img src="images/portfolio-1.jpg" alt="" />
             <div class="info">
               <h3>Project Here</h3>
-              <p>
+              <h5 class="more">click...</h5>
+              <p class="card-description">
                 My creative ability is very difficult to measure because it can
                 manifest in so many surprising and.
               </p>
@@ -160,7 +167,8 @@
             <img src="images/portfolio-2.jpg" alt="" />
             <div class="info">
               <h3>Project Here</h3>
-              <p>
+              <h5 class="more">click...</h5>
+              <p class="card-description">
                 My creative ability is very difficult to measure because it can
                 manifest in so many surprising and.
               </p>
@@ -170,7 +178,8 @@
             <img src="images/portfolio-3.jpg" alt="" />
             <div class="info">
               <h3>Project Here</h3>
-              <p>
+              <h5 class="more">click...</h5>
+              <p class="card-description">
                 My creative ability is very difficult to measure because it can
                 manifest in so many surprising and.
               </p>
@@ -181,7 +190,7 @@
     </div>
     <!-- End Portfolio -->
     <!-- Start About -->
-    <div class="about">
+    <div class="about" id="about">
       <div class="container">
         <h2 class="special-heading">About</h2>
         <p>Less is more work</p>
@@ -209,7 +218,7 @@
     </div>
     <!-- End About -->
     <!-- Start Contact -->
-    <div class="contact">
+    <div class="contact" id="contact">
       <div class="container">
         <h2 class="special-heading">Contact</h2>
         <p>We are born to create</p>
@@ -230,8 +239,11 @@
     <!-- End Contact -->
     <!-- Start Footer -->
     <div class="footer">
-      &copy; 2021 <span>Mohamed Ali</span> All Right Reserved
+      &copy; 2026 <span>Mohamed Ali</span> All Right Reserved
     </div>
     <!-- End Footer -->
+    <!-- btn scroll -->
+    <i class="fa-solid fa-circle-chevron-up btn-top"></i>
+    <!-- btn scroll -->
   </body>
 </html>
